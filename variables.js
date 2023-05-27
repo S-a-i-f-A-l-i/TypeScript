@@ -18,3 +18,29 @@ var data = null;
 data = 'data'; // not giving any error with string value and null
 data = null; // not error
 // data = true // giving error
+// Arrays
+var itemsAny = []; //default type is any;
+// itemsAny.push('Saif');
+// itemsAny.push(21);
+// console.log(itemsAny);
+var itemsStringValues = ['test', 'luis']; // default type to see the values is string
+// itemsStringValues.push(5); // giving error Argument of type 'number' is not assignable to parameter of type 'string'.
+var itemsString = [];
+// itemsString.push(5); // giving same error Argument of type 'number' is not assignable to parameter of type 'string'.
+console.log(itemsString);
+var itemsUnionTypes = [];
+// itemsUnionTypes.push('Saif');
+// itemsUnionTypes.push('Ali');
+// itemsUnionTypes.push(21);
+// itemsUnionTypes.push(27); // only add one number value
+var items = [];
+// items.push('saif');
+// items.push(4);
+// items.push('ali');
+// items.push(3);
+// Object
+var account = {
+    name: 'Saif',
+    balance: 1000000000,
+};
+var accounts; // this means it's contains array of objects

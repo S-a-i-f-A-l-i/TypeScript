@@ -34,3 +34,46 @@ data = null; // not error
 
 // data = true // giving error
 
+
+// Arrays
+
+let itemsAny = []; //default type is any;
+// itemsAny.push('Saif');
+// itemsAny.push(21);
+// console.log(itemsAny);
+
+let itemsStringValues = ['test','luis'] // default type to see the values is string
+// itemsStringValues.push(5); // giving error Argument of type 'number' is not assignable to parameter of type 'string'.
+
+
+let itemsString:string[] = [];
+// itemsString.push(5); // giving same error Argument of type 'number' is not assignable to parameter of type 'string'.
+console.log(itemsString);
+
+let itemsUnionTypes:string[] | number = [];
+
+// itemsUnionTypes.push('Saif');
+// itemsUnionTypes.push('Ali');
+// itemsUnionTypes.push(21);
+// itemsUnionTypes.push(27); // only add one number value
+
+let items: string[]|number[] = [];
+// items.push('saif');
+// items.push(4);
+// items.push('ali');
+// items.push(3);
+
+
+// Object
+
+const account:{
+    name:string,
+    balance:number,
+    status?:string // optional property
+} = {
+    name:'Saif',
+    balance:1000000000,
+}
+
+let accounts:{}[]; // this means it's contains array of objects
+
