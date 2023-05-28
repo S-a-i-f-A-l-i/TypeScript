@@ -95,3 +95,12 @@ const accountWithInterface = {
 }
 
 let accountsWithInterface: IAccount[];
+
+class InvestmentAccount implements IAccount {
+    constructor(public name,public balance){ // name & balance also called outside of class
+        //logic
+    }
+    private withdraw(){ // it's must be called only inside class
+        // logics
+    }
+}

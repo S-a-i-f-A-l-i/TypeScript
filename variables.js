@@ -50,3 +50,14 @@ var accountWithInterface = {
     balance: 9999999999
 };
 var accountsWithInterface;
+var InvestmentAccount = /** @class */ (function () {
+    function InvestmentAccount(name, balance) {
+        this.name = name;
+        this.balance = balance;
+        //logic
+    }
+    InvestmentAccount.prototype.withdraw = function () {
+        // logics
+    };
+    return InvestmentAccount;
+}());
