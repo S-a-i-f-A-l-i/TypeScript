@@ -77,3 +77,21 @@ const account:{
 
 let accounts:{}[]; // this means it's contains array of objects
 
+
+
+
+// interface
+
+interface IAccount {
+    name:string,
+    balance:number,
+    status?:string,
+    deposit?:()=>void
+};
+
+const accountWithInterface = {
+    name:"Saif",
+    balance:9999999999
+}
+
+let accountsWithInterface: IAccount[];

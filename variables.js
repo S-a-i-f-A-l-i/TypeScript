@@ -44,3 +44,9 @@ var account = {
     balance: 1000000000,
 };
 var accounts; // this means it's contains array of objects
+;
+var accountWithInterface = {
+    name: "Saif",
+    balance: 9999999999
+};
+var accountsWithInterface;
